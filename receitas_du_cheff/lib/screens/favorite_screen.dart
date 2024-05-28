@@ -15,7 +15,7 @@ class FavoriteScreen extends StatelessWidget {
     return favoriteMeals.isEmpty
         ? Center(
             child: Text(
-              "Nenhuma Comida foi salva como Favorita",
+              "Nenhuma Comida foi salva como Favorita!",
               style: Theme.of(context).textTheme.headline6,
             ),
           )
