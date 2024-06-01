@@ -7,8 +7,11 @@ import 'package:receitas_du_cheff/screens/filters_screen.dart';
 import 'package:receitas_du_cheff/screens/tabs_screen.dart';
 import 'package:receitas_du_cheff/utils/app_routes.dart';
 import 'package:receitas_du_cheff/data/dummy_data.dart';
+import 'package:receitas_du_cheff/screens/loading_screen.dart';
 import 'models/meal.dart';
 import 'package:receitas_du_cheff/screens/login_screen.dart';
+import 'package:receitas_du_cheff/screens/loading_cadastrar.dart';
+import 'package:receitas_du_cheff/screens/loading_esqueceu_senha.dart';
 import 'package:receitas_du_cheff/screens/sobre_screen.dart';
 
 void main() => runApp(const MyApp());
@@ -66,6 +69,9 @@ class _MyAppState extends State<MyApp> {
             FiltersScreen(filters: filters, onFiltersChanged: _filterMeals),
         AppRoutes.login: (ctx) => LoginScreen(),
         AppRoutes.sobre: (ctx) => SobreScreen(),
+        AppRoutes.loading: (ctx) => LoadingScreen(),
+        AppRoutes.loadingEsqueceuSenha: (ctx) => LoadingEsqueceuSenhaScreen(),
+        AppRoutes.loadingCadastrar: (ctx) => LoadingCadastrarScreen(),
       },
       initialRoute: AppRoutes.homeRoute,
       onUnknownRoute: (settings) => MaterialPageRoute(builder: (_) => const ErrorScreen()),

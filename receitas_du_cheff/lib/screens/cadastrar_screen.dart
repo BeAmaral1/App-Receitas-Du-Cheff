@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:receitas_du_cheff/utils/app_routes.dart';
+import 'package:receitas_du_cheff/screens/loading_cadastrar.dart';
 
 class CadastrarScreen extends StatefulWidget {
   @override
@@ -146,7 +146,11 @@ class _CadastrarScreenState extends State<CadastrarScreen> {
                   SizedBox(height: 15),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(AppRoutes.login);
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoadingCadastrarScreen(),
+                      ),
+                      );
                     },
                     child: Text('Cadastrar'),
                     style: ElevatedButton.styleFrom(

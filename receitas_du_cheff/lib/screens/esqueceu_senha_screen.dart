@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:receitas_du_cheff/utils/app_routes.dart';
-
+import 'package:receitas_du_cheff/screens/loading_esqueceu_senha.dart';
 class EsqueceuSenhaScreen extends StatefulWidget {
   @override
   _EsqueceuSenhaScreenState createState() => _EsqueceuSenhaScreenState();
@@ -14,7 +13,7 @@ class _EsqueceuSenhaScreenState extends State<EsqueceuSenhaScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Recuperar Senha'),
+        title: Text('Alterar Senha'),
         backgroundColor: Colors.orange,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -129,7 +128,11 @@ class _EsqueceuSenhaScreenState extends State<EsqueceuSenhaScreen> {
                   SizedBox(height: 15),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(AppRoutes.login);
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoadingEsqueceuSenhaScreen(),
+                      ),
+                      );
                     },
                     child: Text('Continuar'),
                     style: ElevatedButton.styleFrom(

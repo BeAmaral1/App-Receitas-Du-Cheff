@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:receitas_du_cheff/utils/app_routes.dart';
 import 'package:receitas_du_cheff/screens/cadastrar_screen.dart';
 import 'package:receitas_du_cheff/screens/esqueceu_senha_screen.dart';
+import 'package:receitas_du_cheff/screens/loading_screen.dart'; 
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -176,7 +177,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         Expanded(
                           child: ElevatedButton(
                             onPressed: () {
-                              Navigator.of(context).pushNamed(AppRoutes.homeRoute);
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => LoadingScreen()),
+                              );
                             },
                             child: Text('Login'),
                             style: ElevatedButton.styleFrom(

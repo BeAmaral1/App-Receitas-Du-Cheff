@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:receitas_du_cheff/utils/app_routes.dart'; // Certifique-se de importar seu arquivo de rotas
+import 'package:receitas_du_cheff/utils/app_routes.dart';
 
 class SobreScreen extends StatelessWidget {
   @override
@@ -59,9 +59,77 @@ class SobreScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 10),
-                    Text(
-                      'Bernardo Amaral - Desenvolvedor Flutter\nPedro Prudêncio - Desenvolvedor Flutter\nLeonardo Ermel - Analista de Negócios\nLeonardo Hoffman - Designer de UI/UX',
-                      style: TextStyle(fontSize: 16),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Bernardo Amaral - Desenvolvedor Flutter',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'assets/images/fotobernardo.png',
+                              height: 40,
+                              width: 40,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Pedro Prudêncio - Desenvolvedor Flutter',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'assets/images/fotopedro.jpg',
+                              height: 40,
+                              width: 40,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Leonardo Ermel - Analista de Negócios',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'assets/images/fotoleonardo3.png',
+                              height: 40,
+                              width: 40,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Leonardo Hoffman - Designer de UI/UX',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'assets/images/fotoleonardo2.jpg',
+                              height: 40,
+                              width: 40,
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                     SizedBox(height: 30),
                     Text(

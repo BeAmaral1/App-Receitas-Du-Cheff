@@ -1,6 +1,6 @@
 {
-    "name": "nourriture",
-    "short_name": "nourriture",
+    "name": "receitas_du_cheff",
+    "short_name": "receitas_du_cheff",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

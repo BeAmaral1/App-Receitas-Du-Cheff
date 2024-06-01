@@ -5,4 +5,8 @@ class AppRoutes {
   static const String  filters = "/filters";
   static const String login = '/login';
   static const String sobre = '/sobre';
+  static const String loading = '/loading';
+  static const String loadingEsqueceuSenha = '/loading-esqueceu-senha';
+  static const String loadingCadastrar = '/loading-cadastrar';
+  
 }
